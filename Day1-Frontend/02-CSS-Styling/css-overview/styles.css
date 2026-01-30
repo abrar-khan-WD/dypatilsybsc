@@ -1,0 +1,32 @@
+:root {
+  --primary-color: burlywood;
+  --secondary-color: cadetblue;
+}
+*{
+     overflow-x: hidden !important;
+}
+
+.heading {
+  background-color: var(--primary-color);
+  font-family: "Poppins";
+  font-size: 40px;
+  line-height: 40px;
+}
+.heading-2 {
+  background-color: var(--secondary-color);
+}
+.linear {
+  background:
+    linear-gradient(120deg, rgb(255 0 0 / 0.8), transparent 70.71%),
+    linear-gradient(127deg, rgb(0 255 0 / 0.8), transparent 70.71%),
+    linear-gradient(336deg, rgb(0 0 255 / 0.8), transparent 70.71%);
+}
+.hero{
+    background-image: url('./campus.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px;
+    height: 60vh;
+    width: 100%;
+   
+}

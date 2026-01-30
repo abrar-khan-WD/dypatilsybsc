@@ -1,0 +1,117 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Inter", "Segoe UI", sans-serif;
+	background: #f4f7fb;
+	color: #1f2a37;
+}
+
+.page {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 48px 20px;
+}
+
+.card {
+	width: min(520px, 100%);
+	background: #ffffff;
+	border-radius: 20px;
+	padding: 36px 32px 40px;
+	box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+	border: 1px solid #e5eaf3;
+}
+
+.card__header {
+	margin-bottom: 28px;
+}
+
+.card__eyebrow {
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	color: #64748b;
+	font-size: 12px;
+	font-weight: 600;
+	margin: 0 0 8px;
+}
+
+.card__header h1 {
+	font-size: 28px;
+	margin: 0 0 10px;
+	color: #111827;
+}
+
+.card__subtitle {
+	margin: 0;
+	color: #6b7280;
+	font-size: 14px;
+}
+
+.form {
+	display: grid;
+	gap: 18px;
+}
+
+.field {
+	display: grid;
+	gap: 8px;
+	font-size: 15px;
+	color: #374151;
+	font-weight: 600;
+}
+
+.field input,
+.field select {
+	width: 100%;
+	padding: 14px 16px;
+	border-radius: 12px;
+	border: 1px solid #cfd8e3;
+	font-size: 15px;
+	color: #1f2937;
+	outline: none;
+	background: #f8fafc;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field input::placeholder {
+	color: #9ca3af;
+}
+
+.field input:focus,
+.field select:focus {
+	border-color: #14b8a6;
+	box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.15);
+	background: #ffffff;
+}
+
+.primary-btn {
+	margin-top: 6px;
+	width: 100%;
+	border: none;
+	border-radius: 12px;
+	padding: 14px 18px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #ffffff;
+	background: linear-gradient(135deg, #14b8a6, #0ea5a4);
+	cursor: pointer;
+	box-shadow: 0 12px 20px rgba(14, 165, 164, 0.25);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-btn:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 16px 24px rgba(14, 165, 164, 0.3);
+}
+
+.primary-btn:active {
+	transform: translateY(0);
+	box-shadow: 0 8px 16px rgba(14, 165, 164, 0.2);
+}

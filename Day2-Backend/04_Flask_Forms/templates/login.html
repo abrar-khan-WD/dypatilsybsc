@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="login-container">
+  <div class="login-card">
+
+    <div class="header">
+      <h1>🚀 Welcome Back</h1>
+      <p>Sign in to continue to your dashboard</p>
+    </div>
+
+    {% if error %}
+      <div class="alert alert-error">{{ error }}</div>
+    {% endif %}
+
+    <form class="login-form" method="POST" action="{{ url_for('login') }}">
+
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" name="password" required minlength="6">
+      </div>
+
+      <div class="form-options">
+        <label class="checkbox">
+          <input type="checkbox" name="remember">
+          <span>Remember me</span>
+        </label>
+        <a href="#" class="forgot-link">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="btn-login">Sign In</button>
+    </form>
+
+    <div class="signup-link">
+      <p>Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

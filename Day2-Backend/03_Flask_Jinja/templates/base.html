@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Flask App{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+    
+    <main class="container">
+        {% block content %}
+        Child templates will inject content here 
+        {% endblock %}
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 CodeGyaani Workshop | DY Patil</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Student Registration</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<main class="page">
+			<section class="card" aria-label="Student Registration">
+				<header class="card__header">
+					<p class="card__eyebrow">Student Registration</p>
+					<h1>Create your account</h1>
+					<p class="card__subtitle">Fill in the form below to register for a course.</p>
+				</header>
+
+				<form class="form" action="#" method="post">
+					<label class="field">
+						<span>Full Name</span>
+						<input type="text" name="fullName" placeholder="e.g. John Doe" required />
+					</label>
+
+					<label class="field">
+						<span>Email Address</span>
+						<input
+							type="email"
+							name="email"
+							placeholder="student@example.com"
+							required
+						/>
+					</label>
+
+					<label class="field">
+						<span>Select Course</span>
+						<select name="course" required>
+							<option value="" disabled selected>Select a course</option>
+							<option>Computer Science (CS)</option>
+							<option>Information Tech (IT)</option>
+							<option>Data Science</option>
+						</select>
+					</label>
+
+					<label class="field">
+						<span>Mobile Number</span>
+						<input type="tel" name="phone" placeholder="+91 98765 43210" required />
+					</label>
+
+					<label class="field">
+						<span>Password</span>
+						<input type="password" name="password" placeholder="Create a password" required />
+					</label>
+
+					<button class="primary-btn" type="submit">Register Now</button>
+				</form>
+			</section>
+		</main>
+	</body>
+</html>

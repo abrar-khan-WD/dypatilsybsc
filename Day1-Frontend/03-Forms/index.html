@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <div>
+        <h2>Forms in HTML</h2>
+        <form action="/signup" method="post">
+            <fieldset>
+               <legend>
+                Create Your Account
+               </legend>
+           
+            <label for="email">Enter Your Email</label>
+            <input type="email" placeholder="abc@gmail.com" id="email"> 
+            <br/><br/>
+            <label for="password">Enter Your Password</label>
+            <input type="password" placeholder="12345678" id="password">
+             <br/><br/>
+             <label for="">Select Account Type</label>
+             <input type="checkbox" name="user" id="user"> User
+             <input type="checkbox" name="admin" id="admin"> Admin
+             <br/><br/>
+             <label for="phone">Enter Your Phone No</label>
+             <input type="tel" name="phone" id="phone" placeholder="10 digit">
+             <br/><br/>
+             <label for="course">Select Course</label>
+             <select name="course" id="course">
+                <option value="1">BBA</option>
+                 <option value="1">BCA</option>
+                  <option value="1">BSC</option>
+             </select>
+             <br><br>
+             <button>
+                Submit
+             </button>
+              </fieldset>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+Step 1: Verify Python Installation
+Windows - python --version
+Mac - python3 --version
+
+Step 2: Create Project Folder
+cd Desktop
+mkdir flask-workshop
+cd flask-workshop
+
+Step 3: Create Virtual Environment
+Why virtual environment? Keeps project dependencies isolated - PROFESSIONAL PRACTICE!
+python -m venv venv
+
+Step 4: Activate Virtual Environment
+Windows - venv\Scripts\activate
+Macbook - source venv/bin/activate
+
+Step 5: Install Flask
+pip install flask
+
+Step 6:Verify Flask Installation
+python -c 'import flask; print(flask.__version__)'
+
+Step 7: Run the App
+python app.py
+
+Step 8: Open in Browser
+http://127.0.0.1:5000/
